@@ -4,8 +4,8 @@ import os
 import json
 
 client = Elasticsearch(
-  "https://df3eda039ead43488344961c75152714.us-central1.gcp.cloud.es.io:443",
-  api_key="WXByeENZOEJNVFV2SjBoUjBqZkU6OHkwd3ZGODFTTGlFVDRlSFRReWNLZw=="
+  os.environ["ELASTICSEARCH_ENDPOINT"],
+  api_key=os.environ["ELASTICSEARCH_APIKEY"]
 )
 
 documents = []
