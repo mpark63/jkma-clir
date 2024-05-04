@@ -1,3 +1,5 @@
+## script to "decode" the hashed value of pdf urls 
+## add the url to the json file
 import hashlib
 from scrapy.utils.python import to_bytes
 import os

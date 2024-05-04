@@ -1,12 +1,11 @@
-from collections import defaultdict
 import os
 from papermage.recipes import CoreRecipe
 import json 
 
 recipe = CoreRecipe()
 
-pdf_folder = "/Users/mpark/scrapyProject/pdfs/full/"
-json_folder = "/Users/mpark/pageJsons/"
+pdf_folder = "<REPLACE_WITH_PDF_FOLDER_PATH>"
+json_folder = "<REPLACE_WITH_JSON_FOLDER_PATH>"
 
 def pdf_to_json(pdf_name, pdf_folder, json_folder):
     file_path = os.path.join(pdf_folder, pdf_name)

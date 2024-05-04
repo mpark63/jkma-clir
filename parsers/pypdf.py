@@ -10,9 +10,6 @@ def parse(pdf_name, pdf_path):
     # extract reference elements:
     print(document.elements)
 
-    # remove tables
-    # tabular_data = tables.extract_table(document.elements, fix_element_in_multiple_rows=True, fix_element_in_multiple_cols=True)
-    
     # aggregate text 
     content_text = "\n".join(element.text() for element in document.elements)
 
@@ -20,7 +17,6 @@ def parse(pdf_name, pdf_path):
     with open(f'txt/{pdf_name}.txt', 'w') as file:
         # Write content to the file
         file.write(content_text)
-
 
 
 def main(pdf_name, pdf_path):

@@ -1,9 +1,11 @@
+## script to filter json files based on the number of cid occurrences
+## useful when using papermage, which sometimes produces unusable json files
 import os
 import shutil
 
-json_folder = "/Users/mpark/Desktop/pageJsons/"
-cid_folder = "/Users/mpark/Desktop/pageJsons/cid/"
-hangeul_folder = "/Users/mpark/Desktop/pageJsons/hangeul/"
+json_folder = "<PATH_TO_JSON_FOLDER>"
+cid_folder = "<PATH_TO_CID_FOLDER>"
+hangeul_folder = "<PATH_TO_HANGEUL_FOLDER>"
 
 def filter(filename):
     file_path = os.path.join(json_folder, filename)

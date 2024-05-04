@@ -5,10 +5,8 @@ import json
 from io import StringIO
 from bs4 import BeautifulSoup
 
-json_folder = "/Users/mpark/Desktop/pageJsons/"
-cid_folder = "/Users/mpark/Desktop/pageJsons/cid/"
-hangeul_folder = "/Users/mpark/Desktop/pageJsons/hangeul/"
-pdf_folder = "/Users/mpark/Desktop/full/"
+json_folder = "<REPLACE_WITH_YOUR_PATH>"
+pdf_folder = "<REPLACE_WITH_YOUR_PATH>"
 
 def extract_text_from_pdf(filename):
     pdf_path = os.path.join(pdf_folder, filename)

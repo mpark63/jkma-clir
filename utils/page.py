@@ -1,3 +1,4 @@
+## script to populate the number of pages in the json files
 import os
 import json
 import PyPDF2

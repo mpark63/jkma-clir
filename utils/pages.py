@@ -1,3 +1,5 @@
+## script to split json files into individual page json files
+## name of the new json files will be the original filename + page number
 import os 
 import json 
 from copy import deepcopy 

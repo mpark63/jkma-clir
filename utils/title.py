@@ -1,6 +1,7 @@
+# script to extract title, author, and keyword from papermage metadata 
+# when multiple options available, pick the longest one
 import os
 import json
-
 
 def pick_longest(li):
   longest = ""
